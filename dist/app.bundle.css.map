@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/components/hello.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA,2BAA2B","file":"app.bundle.css","sourcesContent":[".hello-header {\n  font-size: 1.25em;\n  color: #8ea3a6;\n  font-variant: small-caps; }\n"],"sourceRoot":""}
