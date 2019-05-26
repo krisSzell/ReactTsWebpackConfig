@@ -11,8 +11,10 @@
         "target": "es2015",
         "baseUrl": "src",
         "paths": {
-            "components/*": ["components/*"],
-            "services/*": ["services/*"]
+            "@components/*": ["components/*"],
+            "@services/*": ["services/*"],
+            "@components/shared/*": ["components/shared/*"]
         }
-    }
+    },
+    "exclude": ["node_modules", "dist"]
 }

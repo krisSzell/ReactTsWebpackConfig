@@ -22,9 +22,9 @@ module.exports = merge(
         resolve: {
             extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
             alias: {
-                components: path.join(__dirname, "src", "components"),
-                services: path.join(__dirname, "src", "services"),
-                styles: path.join(__dirname, "src", "styles")
+                "@components": path.join(__dirname, "src", "components"),
+                "@services": path.join(__dirname, "src", "services"),
+                "@styles": path.join(__dirname, "src", "styles")
             }
         },
         module: {
