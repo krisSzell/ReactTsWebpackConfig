@@ -1,0 +1,21 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    * {
+        padding: 0.5rem;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 1.125rem;
+        padding-left: 0;
+    }
+
+    input {
+        border-radius: 0.25rem;
+        border-style: solid;
+        border-width: 1px;
+    }
+}

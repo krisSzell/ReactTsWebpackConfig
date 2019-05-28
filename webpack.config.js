@@ -9,7 +9,7 @@ module.exports = merge(
     {
         mode: "development",
         entry: {
-            index: [path.resolve(__dirname, "src/App.tsx")]
+            index: [path.resolve(__dirname, "src/index.tsx")]
         },
         output: {
             path: path.resolve(__dirname, "dist"),
@@ -40,11 +40,7 @@ module.exports = merge(
                 },
                 {
                     test: /\.scss$/,
-                    use: [
-                        MiniCssExtractPlugin.loader,
-                        "css-loader",
-                        "sass-loader"
-                    ]
+                    use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
                 },
                 {
                     test: /\.(svg|png|jpg|gif)$/,

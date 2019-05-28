@@ -18,7 +18,7 @@ const { Provider: ToggleContextProvider, Consumer: ToggleContextConsumer } = Rea
     toggle: () => null
 });
 
-class Toggle extends React.Component<IProps, IState> {
+class CompoundToggle extends React.Component<IProps, IState> {
     // These are the compound elements that users
     // can place inside our Toggle component
     static On = ({ children }: any) => (
@@ -81,20 +81,20 @@ const Usage = () => {
     };
 
     return (
-        <Toggle onToggle={onToggle} stateReducer={stateReducer}>
+        <CompoundToggle onToggle={onToggle} stateReducer={stateReducer}>
             <div>
                 {timesClicked >= 4 ? (
                     <h3 style={{ color: "orange" }}>You clicked too many times!</h3>
                 ) : (
                     <h2>Click this button to toggle.</h2>
                 )}
-                <Toggle.Button />
+                <CompoundToggle.Button />
             </div>
-            <Toggle.On>Content rendered when toggle is on.</Toggle.On>
-            <Toggle.Off>Content rendered when toggle is off.</Toggle.Off>
-        </Toggle>
+            <CompoundToggle.On>Content rendered when toggle is on.</CompoundToggle.On>
+            <CompoundToggle.Off>Content rendered when toggle is off.</CompoundToggle.Off>
+        </CompoundToggle>
     );
 };
 Usage.title = "Compound Components";
 
-export { Toggle, Usage as default };
+export { CompoundToggle as Toggle, Usage as default };

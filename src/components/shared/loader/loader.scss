@@ -1,0 +1,28 @@
+@import "@styles/theme.scss";
+
+.loader {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.app-startup-loader {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .header {
+        font-size: 2.25em;
+        color: $text-primary;
+        font-variant: small-caps;
+    }
+}

@@ -2,7 +2,7 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "jsx": "react",
-        "module": "es2015",
+        "module": "esnext",
         "moduleResolution": "node",
         "noImplicitAny": true,
         "preserveConstEnums": true,
@@ -13,6 +13,7 @@
         "paths": {
             "@components/*": ["components/*"],
             "@services/*": ["services/*"],
+            "@styles/*": ["styles/*"],
             "@components/shared/*": ["components/shared/*"]
         }
     },
